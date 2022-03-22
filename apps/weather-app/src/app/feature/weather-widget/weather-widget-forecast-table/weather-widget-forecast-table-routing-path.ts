@@ -1,0 +1,1 @@
+export const WEATHER_WIDGET_FORECAST_TABLE_ROUTING_PATH = 'forecast';

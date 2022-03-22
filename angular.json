@@ -1,0 +1,9 @@
+{
+    "cli": {
+        "analytics": false
+    },
+    "version": 2,
+    "projects": {
+        "weather-app": "apps/weather-app"
+    }
+}

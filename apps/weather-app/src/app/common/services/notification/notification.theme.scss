@@ -1,0 +1,21 @@
+@import '~@angular/material/theming';
+
+@mixin notification-theme($theme) {
+    $foreground: map-get($theme, foreground);
+
+    .notification {
+        color: mat-color($foreground, text);
+
+        &__info {
+            background-color: mat-color($mat-blue, 100);
+        }
+    
+        &__warning {
+            background-color: mat-color($mat-orange, 100);
+        }
+    
+        &__error {
+            background-color: mat-color($mat-red, 100);
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import '~@angular/material/theming';
+@import 'theme.scss';
+@import 'app/common/services/notification/notification.theme.scss';
+
+@include mat-core();
+
+body {
+    margin: 0;
+}
+
+.weather-app {
+    @include angular-material-theme($weather-app-theme);
+    @include notification-theme($weather-app-theme);
+}

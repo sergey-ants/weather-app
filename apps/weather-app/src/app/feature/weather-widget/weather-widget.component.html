@@ -1,0 +1,18 @@
+<div class="weather-widget-container">
+    <mat-form-field class="weather-widget-place-name-input" appearance="outline">
+        <mat-label>Enter place name</mat-label>
+        <input
+            matInput
+            #placeInput
+            placeholder="Ex. Istanbul"
+            [(ngModel)]="placeName">
+        <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+    <div class="weather-widget-forecast-interval-container">
+        Weather forecast interval
+        <mat-button-toggle-group [(ngModel)]="forecastInterval">
+            <mat-button-toggle *ngFor="let interval of availableForecastIntervals" [value]="interval">{{ getFormattedInterval(interval) }}</mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+    <router-outlet></router-outlet>
+</div>

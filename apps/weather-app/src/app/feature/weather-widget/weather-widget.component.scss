@@ -1,0 +1,18 @@
+.weather-widget-container {
+    padding: 20px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-widget-forecast-interval-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.weather-widget-place-name-input,
+.weather-widget-forecast-interval-container {
+    max-width: 400px;
+}
