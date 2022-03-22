@@ -9,7 +9,8 @@
     "build": "nx build",
     "test": "nx test",
     "lint": "nx lint",
-    "predeploy": "nx build weather-app --prod --baseHref=/weather-app/"
+    "predeploy": "nx build --prod --base-href https://sergey-ants.github.io/weather-app/",
+    "deploy": "ngh --dir=dist/apps/weather-app"
   },
   "private": true,
   "dependencies": {
