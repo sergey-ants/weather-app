@@ -5,7 +5,7 @@ import { difference } from 'lodash';
 
 @Injectable()
 export class OpenWeatherApiEndpointsService {
-    private readonly openWeatherMapMain = 'http://api.openweathermap.org/';
+    private readonly openWeatherMapMain = 'https://api.openweathermap.org/';
 
     constructor(
         @Inject(OPEN_WEATHER_API_KEY)
